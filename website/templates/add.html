@@ -2,4 +2,15 @@
 
 {% block 'content' %}
     <h1>Add</h1>
+    {{ answer }}
+    <br/><br/>
+    <form action="{% url 'add' %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Type Your Answer Here!" name="answer">
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-secondary">Submit</button>
+    </form>
+
 {% endblock %}
