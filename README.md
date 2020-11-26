@@ -18,3 +18,4 @@ python3 manage.py migrate
 python manage.py createsuperuser
 python3 manage.py runserver
 ```
+You can see deployed project here - https://app-flashcard.herokuapp.com/ 
